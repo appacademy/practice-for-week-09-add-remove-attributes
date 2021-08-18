@@ -1,0 +1,53 @@
+/* photo sizes */
+
+#photo.small {
+    width: 500px;
+}
+#photo.medium {
+    width: 750px;
+}
+#photo.large {
+    width: 1000px;
+}
+
+/* button selection */
+
+button.selected {
+    background-color: black;
+    color: white;
+}
+
+/* page layout */
+
+.header {
+    padding: 1rem 2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 120px repeat(auto-fit, minmax(90px, 120px));
+    grid-gap: 0.25rem 0.5rem;
+    align-items: center;
+    padding: 0.25rem 0;
+    max-width: 800px;
+}
+
+/* photo layout */
+
+.photo-caption {
+    display: flex;
+    justify-content: space-between;
+}
+.photo-caption:last-child {
+    text-align: right;
+}
+
+#photo > img {
+    width: 100%;
+    border: solid black 2px;
+}
+
+#photo-source {
+    font-style: italic;
+    color: #767E8F;
+}
